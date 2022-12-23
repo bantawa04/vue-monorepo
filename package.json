@@ -8,10 +8,13 @@
     "bootstrap": "yarn install; lerna bootstrap;",
     "package:admin": "lerna run --scope admin --stream dev",
     "package:user": "lerna run --scope user --stream dev",
+    "package:api": "lerna run --scope api --stream dev",
     "start": "run-p --print-label package:*",
     "build": "lerna run --parallel build"
   },
   "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20",
     "pinia": "^2.0.28",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6"
